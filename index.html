@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('images/gym1.jpg');
+            background-position-x: 300px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 40px;
+            top: 20px;
+
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+            /* to take element in middle*/
+        }
+
+        .right {
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .left img {
+            width: 75px;
+            /* to convert black img to white */
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: grey;
+
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 130px 36px;
+            padding: 51px;
+            width: 30%;
+            border-radius: 10px;
+        }
+
+        .formgroup input {
+            text-align: center;
+            display: block;
+            width: 190px;
+            padding: 7px;
+            border: 2px solid black;
+            margin: 4px auto;
+            border-radius: 10px;
+            font-size: 13px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="images/gym2.png" alt="">
+            <div>Fitness Hub</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">About Us</a> </li>
+                <li> <a href="#">Fitness Calculator</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">E-Mail us</button>
+        </div>
+
+
+    </header>
+
+    <div class="container">
+        <h1>Make fitness your Best Friend </h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your name" id="">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your age" id="">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your gender" id="">
+            </div>
+
+            <div class="formgroup">
+                <input type="text" name="" placeholder="enter your contact no." id="">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
